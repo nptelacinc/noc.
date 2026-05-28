@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NPTEL Certificate</title>
+
+<style>
+
+:root{
+    --bg:#f1f3f4;
+    --text:#202124;
+    --btn:#1a73e8;
+    --pdf:#d9d9d9;
+}
+
+@media (prefers-color-scheme: dark){
+
+:root{
+    --bg:#202124;
+    --text:#e8eaed;
+    --pdf:#3b3b3b;
+}
+
+}
+
+body{
+
+    margin:0;
+    padding:0;
+
+    background:var(--bg);
+
+    font-family:Arial,sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+}
+
+.container{
+    text-align:center;
+}
+
+/* PDF ICON */
+
+.pdf-icon{
+
+    width:54px;
+    height:54px;
+
+    margin:auto;
+
+    border-radius:8px;
+
+    background:var(--pdf);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* PDF TEXT */
+
+.pdf-icon span{
+
+    font-family:sans-serif;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#f5f5f5;
+
+    letter-spacing:1px;
+
+    transform:scaleY(1.05);
+}
+
+/* FILE NAME */
+
+.filename{
+
+    margin-top:18px;
+
+    color:var(--text);
+
+    font-size:14px;
+
+    letter-spacing:0.2px;
+}
+
+/* OPEN BUTTON */
+
+.open-btn{
+
+    display:inline-block;
+
+    margin-top:16px;
+
+    padding:14px 105px;
+
+    border-radius:30px;
+
+    background:var(--btn);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:600;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="pdf-icon">
+<span>PDF</span>
+</div>
+
+<div class="filename">
+NOC26HS54S55390019403264023.pdf
+</div>
+
+<a 
+class="open-btn"
+href="NOC26HS54S55390019403264023.pdf"
+target="_blank">
+
+Open
+
+</a>
+
+</div>
+
+</body>
+</html>
