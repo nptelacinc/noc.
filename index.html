@@ -11,47 +11,47 @@
 body{
     margin:0;
     padding:0;
-    background:#ffffff;
-    font-family:sans-serif;
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
+    background:#ffffff;
+    font-family:sans-serif;
 }
 
 .container{
-    width:90%;
-    max-width:420px;
     text-align:center;
+    width:90%;
+    max-width:430px;
 }
 
-/* Real NPTEL Style PDF Icon */
+/* REAL NPTEL STYLE PDF ICON */
 
 .pdf-icon{
-    width:150px;
-    height:180px;
-    background:#e7e7e7;
-    border-radius:16px;
+    width:120px;
+    height:120px;
     margin:auto;
     position:relative;
-
-    box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.8),
-    0 3px 8px rgba(0,0,0,0.08);
 }
 
-.pdf-icon::before{
+.pdf-paper{
+    width:100%;
+    height:100%;
+    background:#ececec;
+    border-radius:12px;
+    position:relative;
+    overflow:hidden;
+}
+
+.pdf-paper::before{
     content:"";
     position:absolute;
     top:0;
     right:0;
-    width:42px;
-    height:42px;
-    background:#f4f4f4;
-
+    width:30px;
+    height:30px;
+    background:#f7f7f7;
     clip-path:polygon(0 0,100% 0,100% 100%);
-    
-    border-top-right-radius:16px;
 }
 
 .pdf-text{
@@ -60,40 +60,39 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     
-    font-size:56px;
-    font-weight:700;
     color:#ffffff;
-    letter-spacing:3px;
+    font-size:44px;
+    font-weight:700;
+    letter-spacing:2px;
 }
 
-/* File Name */
+/* FILE NAME */
 
 .file-name{
-    margin-top:38px;
-    font-size:24px;
+    margin-top:35px;
+    font-size:22px;
+    color:#111;
     line-height:1.5;
-    color:#222;
     word-break:break-word;
 }
 
-/* Open Button */
+/* OPEN BUTTON */
 
 .open-btn{
     display:inline-block;
     margin-top:38px;
-    padding:22px 120px;
-    
-    background:#0b6ffb;
+    background:#0a6cff;
     color:white;
-
     text-decoration:none;
-    font-size:36px;
-    font-weight:700;
+
+    padding:22px 120px;
 
     border-radius:24px;
 
-    box-shadow:
-    0 5px 12px rgba(0,0,0,0.15);
+    font-size:34px;
+    font-weight:700;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
 }
 
 .open-btn:active{
@@ -107,19 +106,14 @@ body{
 
 <div class="container">
 
-    <!-- PDF ICON -->
-
     <div class="pdf-icon">
+        <div class="pdf-paper"></div>
         <div class="pdf-text">PDF</div>
     </div>
-
-    <!-- FILE NAME -->
 
     <div class="file-name">
         NOC26HS54S55390019403264023.pdf
     </div>
-
-    <!-- OPEN BUTTON -->
 
     <a class="open-btn"
        href="NOC26HS54S55390019403264023.pdf">
