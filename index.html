@@ -10,94 +10,54 @@
 
 body{
     margin:0;
-    padding:0;
+    background:#efefef;
+    font-family:Arial,sans-serif;
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#ffffff;
-    font-family:sans-serif;
 }
 
-.container{
+.box{
     text-align:center;
-    width:90%;
-    max-width:430px;
+    transform:translateY(-20px);
 }
-
-/* SMALL REAL NPTEL STYLE PDF ICON */
 
 .pdf-icon{
-    width:72px;
-    height:72px;
-    margin:auto;
-    position:relative;
-}
-
-.pdf-paper{
-    width:100%;
-    height:100%;
-    background:#e9e9e9;
-    border-radius:8px;
-    position:relative;
-    overflow:hidden;
-}
-
-.pdf-paper::before{
-    content:"";
-    position:absolute;
-    top:0;
-    right:0;
-    width:18px;
-    height:18px;
-    background:#f6f6f6;
-    clip-path:polygon(0 0,100% 0,100% 100%);
-}
-
-.pdf-text{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-
-    color:#ffffff;
-    font-size:24px;
+    width:44px;
+    height:44px;
+    border:2px solid #d8d8d8;
+    border-radius:6px;
+    color:#cfcfcf;
+    font-size:18px;
     font-weight:700;
-    letter-spacing:1px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    margin-bottom:14px;
+    letter-spacing:0.5px;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
-/* FILE NAME */
-
-.file-name{
-    margin-top:26px;
-    font-size:22px;
-    color:#111;
-    line-height:1.5;
-    word-break:break-word;
+.filename{
+    font-size:15px;
+    color:#222;
+    margin-bottom:14px;
+    font-weight:400;
 }
-
-/* OPEN BUTTON */
 
 .open-btn{
     display:inline-block;
-    margin-top:34px;
-
-    background:#0a6cff;
+    background:#1a73e8;
     color:white;
     text-decoration:none;
-
-    padding:22px 120px;
-
-    border-radius:24px;
-
-    font-size:34px;
-    font-weight:700;
-
-    box-shadow:0 4px 10px rgba(0,0,0,0.15);
-}
-
-.open-btn:active{
-    transform:scale(0.98);
+    border-radius:22px;
+    padding:9px 34px;
+    font-size:16px;
+    font-weight:500;
+    font-family:Arial,sans-serif;
 }
 
 </style>
@@ -105,27 +65,23 @@ body{
 
 <body>
 
-<div class="container">
+<div class="box">
 
-    <!-- SMALL PDF ICON -->
+<div class="pdf-icon">
+PDF
+</div>
 
-    <div class="pdf-icon">
-        <div class="pdf-paper"></div>
-        <div class="pdf-text">PDF</div>
-    </div>
+<div class="filename">
+NOC26HS54S55390019403264023.pdf
+</div>
 
-    <!-- FILE NAME -->
+<a class="open-btn"
+href="NOC26HS54S55390019403264023.pdf"
+target="_blank">
 
-    <div class="file-name">
-        NOC26HS54S55390019403264023.pdf
-    </div>
+Open
 
-    <!-- OPEN BUTTON -->
-
-    <a class="open-btn"
-       href="NOC26HS54S55390019403264023.pdf">
-       Open
-    </a>
+</a>
 
 </div>
 
